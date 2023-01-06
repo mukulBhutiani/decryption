@@ -2,17 +2,20 @@
 name = "decryption"
 version = "0.1.0"
 edition = "2021"
-
+authors = ["Mukul <bhutianimukul@gmail.com>"]
+description = "decrypt csv"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/mukulBhutiani/decryption"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
-openssl = "0.10.28"
+openssl = "0.7"
 csv = "1.1"
 serde_json = "1.0"
 json = "0.12"
 "base64"= "0.20"
 "colored" = "2.0.0"
 wasm-bindgen = "0.2"
-
-[lib]
-crate-type = ["cdylib"]
